@@ -1,2 +1,4 @@
 .venv/
 __pycache__/
+agent/files/*_files/
+.DS_Store

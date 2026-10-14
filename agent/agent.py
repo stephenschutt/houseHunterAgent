@@ -9,6 +9,7 @@ Usage:
 """
 
 import json
+import os
 import re
 import sys
 from pathlib import Path
@@ -17,6 +18,7 @@ from bs4 import BeautifulSoup
 from smolagents import CodeAgent, LiteLLMModel, tool
 
 FILES_DIR = Path(__file__).resolve().parent / "files"
+MODEL_ID = os.environ.get("MODEL_ID", "anthropic/claude-sonnet-5-5")
 
 def _walk(obj):
     """Yield every dict nested in obj, descending into JSON-encoded strings too

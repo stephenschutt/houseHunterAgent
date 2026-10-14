@@ -1,2 +1,2 @@
-smolagents[litellm]
+smolagents[litellm,gradio]
 beautifulsoup4
